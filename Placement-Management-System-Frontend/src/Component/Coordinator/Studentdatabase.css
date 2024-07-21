@@ -1,0 +1,50 @@
+/* StudentDatabase.css */
+
+.student-database-container {
+  font-family: Arial, sans-serif;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.download-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-table th, .student-table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.student-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.student-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.student-table tr:hover {
+  background-color: #ddd;
+}
+

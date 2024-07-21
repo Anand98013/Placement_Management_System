@@ -1,0 +1,88 @@
+/* ForHire.module.css */
+.hireBody {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  background-image: url("https://img.freepik.com/free-photo/we-are-hiring-concept_23-2150902117.jpg?t=st=1710531599~exp=1710532199~hmac=4ccebec0de832f3adef3e73521d7a0b66d477d9b30c433cde636e5b21efca9a9");
+  animation: animate 12s linear infinite;
+  padding: 50px;
+  padding-top: 15rem;
+  padding-bottom: 45rem;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.hireBody h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #f1f1f1;
+  padding: 17px;
+  background: brown;
+  margin-bottom: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: -webkit-fill-available;
+}
+.tableContainer {
+    /* max-width: 1000px; */
+    margin: 0 auto;
+    /* margin-top: 80px; */
+    font-family: Arial, sans-serif; 
+  }
+  
+  .head {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color: crimson;;
+
+    padding: 30px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black; 
+    background-color: #ccc;
+  }
+  
+  thead {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    /* border-bottom: 1px solid #ccc;  */
+  }
+  
+  th:first-child, td:first-child {
+    border-left: 1px solid #ccc; 
+  }
+  
+  th:last-child, td:last-child {
+    border-right: 1px solid #ccc;
+  }
+  
+  tbody tr:last-child td {
+    border-bottom: none; 
+  }
+  
+  tbody tr:hover {
+    background-color: #f2f2f2; 
+  }
+  

@@ -1,0 +1,155 @@
+/* Teacher.module.css */
+
+.std h1 {
+      color: aliceblue;
+      background-color: rgba(160, 45, 45, 0.99);
+      text-align: center;
+      padding: 10px 10px;
+      font-family: sans-serif;
+    }
+    
+    .home {
+      width: 100%;
+      height: 100%;
+      background-image: url(https://as1.ftcdn.net/v2/jpg/01/27/15/80/1000_F_127158034_BUnPJ4CbSnuEjNC44A0vl3O7t5xld5Ye.jpg);
+      animation: animate 5s linear infinite;
+      padding-bottom: 20rem;
+    }
+    
+    .wrapper {
+      padding-top: 50px;
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+    }
+    
+    .card {
+      margin-left: 15px;
+      margin-right: 15px;
+      width: 500px;
+      height: 360px;
+      background: #fff;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+      transition: 0.5s ease-in-out;
+      border: 4px solid rgb(223, 223, 14);
+      border-radius: 50px;
+    }
+    
+    .card:hover {
+      transform: translateY(15px);
+    }
+    
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .card:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(217, 22, 25, 0.5), rgba(150, 201, 61, 1));
+      z-index: 2;
+      transition: 0.5s all;
+      opacity: 0;
+    }
+    
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50px;
+    }
+    
+    .card .info {
+      padding-top: 70%;
+      margin-bottom: 20px;
+      text-align: center;
+      align-items: center;
+      margin-right: 30%;
+      border-radius: none;
+      position: relative;
+      z-index: 3;
+      color: #fff;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: 0.5s all;
+    }
+    
+    .card:hover .info {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    
+    .info h1 {
+      margin-left: 25%;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+      background: beige;
+      font-weight: 800;
+      color: rgb(0, 0, 0);
+    }
+    
+    .card .info .btn {
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      background: #04e513;
+      color: #000;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.4s ease-in-out;
+      margin-left: 50%;
+    }
+    
+    .card .info .btn:hover {
+      box-shadow: 0px 7px 10px rgb(217, 250, 1);
+    }
+    
+    .logoutButton {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 5px 10px;
+      background-color: #04e513;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      height: 40px;
+      /* width: 100px; */
+    }
+    
+    .logoutButton:hover {
+      background-color: #036a10;
+    }
+    
+    @keyframes animate {
+      0% {
+        background-position: 0 50%;
+      }
+    
+      50% {
+        background-position: 100% 50%;
+      }
+    
+      100% {
+        background-position: 0 50%;
+      }
+    }
+    

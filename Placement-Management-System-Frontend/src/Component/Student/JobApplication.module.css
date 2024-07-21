@@ -1,0 +1,123 @@
+/* Reset default margin, padding, and box-sizing */
+.jobBody{
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  background-image: url("https://img.freepik.com/free-vector/recruitment-background-design_1200-215.jpg?w=996&t=st=1710535829~exp=1710536429~hmac=0c5421898b293e5d1a5a57d28c99edd8bf24f43d9ec2cde5437e641c5473535f");
+  animation: animate 12s linear infinite;
+  padding: 50px;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/* Container styles */
+.container {
+  max-width: 900px;
+  margin: 90px auto;
+  background-color: azure;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.jobBody h1{
+  font-size: 30px;
+  text-align: center;
+  color: #f1f1f1;
+  padding: 17px;
+  background: brown;
+  margin-bottom: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: -webkit-fill-available;
+}
+
+/* Apply box styles */
+.apply-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.title-small {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: rgb(204, 87, 107);
+}
+h1 {
+  text-align: center;
+}
+
+/* Form container styles */
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Form control styles */
+.form-control {
+  margin-bottom: 20px;
+}
+
+/* Label styles */
+.label1 {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black;
+  font-weight: bold;
+  font-size: 1.8rem;
+  font-family: "librebaskerville-regular", serif;
+  text-align: center;
+}
+
+/* Input, select, textarea styles */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: royalblue;
+}
+
+button {
+  background-color: royalblue; /* Default button color */
+  color: #fff;
+  border: none;
+  padding: 4px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: navy; /* Button color on hover */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 460px) {
+  .textarea-control {
+    grid-column: 1 / span 1;
+  }
+}

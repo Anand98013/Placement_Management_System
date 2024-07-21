@@ -1,0 +1,71 @@
+/* Report.module.css */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.heading {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #4caf50; /* Add background color */
+  color: white; /* Add text color */
+  padding: 10px 20px; /* Add padding */
+  border-radius: 5px; /* Add border radius */
+}
+
+.input_container {
+  margin-bottom: 20px;
+}
+
+.input_container input[type='text'] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.download_button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.download_button:hover {
+  background-color: #45a049;
+}
+
+.table_container {
+  margin-top: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+  background-color: #ddd;
+}
